@@ -1,8 +1,9 @@
 package creditCardValidation;
+import java.util.Scanner;
 
 public class assignment5 {
     public static void main(String[] args) {
-        int max = 1;
+        
     }
 
     /**
@@ -11,6 +12,15 @@ public class assignment5 {
 public class CreditCardValidation {
     public static void main(String[] args) {
         
+        Scanner input = new Scanner(System.in);
+
+        	// Prompt the user to enter a credit card number as a long integer
+            System.out.println("Enter a credit card number as a long integer: "); 
+            long creditCardNumber = input.nextLong();
+
+           
+        
+                    
     }
 
     /**
@@ -40,7 +50,9 @@ public class CreditCardValidation {
      * @return Size of the Credit Card Number
      */
     public static int getCreditCardSize(long creditCardNumber){
-        return 0;
+        
+        String num = creditCardNumber + "";
+        return num.length();
     }
 
     /**
@@ -50,7 +62,12 @@ public class CreditCardValidation {
      * @return Returns the sum of the doubled even position numbers in the creditCardNumber parameter.
      */
     public static int calculateEvenPositionSum(long creditCardNumber){
+        
         return 0;
+
+    }
+
+
     }
 
     /**
@@ -59,9 +76,11 @@ public class CreditCardValidation {
      * @return Returns the sum of the odd position numbers in the creditCardNumber parameter.
      */
     public static int calculateOddPositionSum(long creditCardNumber){
-        return 0;
+        int sum = 0;
+        String num = creditCardNumber + "";
+        
     }
 
 }
 
-}
+
