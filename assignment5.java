@@ -18,7 +18,7 @@ public class CreditCardValidation {
             System.out.println("Enter a credit card number as a long integer: "); 
             long creditCardNumber = input.nextLong();
 
-           
+           int max;
         
                     
     }
